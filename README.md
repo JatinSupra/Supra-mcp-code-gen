@@ -11,7 +11,7 @@ Lean MCP integration for generating Supra Move contracts and TypeScript SDK code
 ### **One-Click Installation**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/JatinSupra/Supra-mcp-code-gen/refs/heads/main/supra/move_workspace/MCP_SUPRA/script/set.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JatinSupra/SUPRA-mcp-code-gen/refs/heads/main/script/set.sh | bash
 chmod +x set.sh && ./set.sh
 ```
 
