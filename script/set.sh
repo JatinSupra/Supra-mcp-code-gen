@@ -445,7 +445,7 @@ export async function verifiedExample() {
         type: 'text',
         text: `# **VALIDATED** Supra SDK Code (v4.3.1)
 
-## 🛡️ **Validation Guarantees:**
+## **Validation Guarantees:**
 - ✅ **All interfaces verified**: Only uses existing SDK interfaces
 - ✅ **All methods confirmed**: Every method verified in v4.3.1 docs  
 - ✅ **No fictional APIs**: Zero non-existent methods or properties
@@ -461,7 +461,7 @@ npm install supra-l1-sdk@4.3.1
 ${safeCode}
 \`\`\`
 
-## 🚫 **What This Code DOESN'T Use (Common Mistakes):**
+## **What This Code DOESN'T Use (Common Mistakes):**
 ${this.VERIFIED_SDK_INTERFACES.nonExistent.map(i => `❌ ${i} (doesn't exist)`).join('\n')}
 
 ## **Validation Status:**
@@ -471,7 +471,7 @@ ${this.VERIFIED_SDK_INTERFACES.nonExistent.map(i => `❌ ${i} (doesn't exist)`).
 - **Type Check**: PASSED ✅
 - **Compilation**: GUARANTEED ✅
 
-**This code is 100% guaranteed to work with real Supra SDK! 🚀**
+**This code is 100% guaranteed to work with real Supra SDK!**
 `
       }]
     };
@@ -860,7 +860,7 @@ ${this.SAFE_PATTERNS.safeErrors}
     return {
       content: [{
         type: 'text',
-        text: `# 🛡️ **VALIDATED** Supra CLI Commands
+        text: `# **VALIDATED** Supra CLI Commands
 
 ## **Common Mistakes to Avoid:**
 \`\`\`bash
@@ -870,7 +870,7 @@ supra move compile                 # Missing required flags
 aptos move publish                 # Wrong CLI tool
 supra deploy                       # Doesn't exist
 
-# ✅ CORRECT - Verified working commands:
+# CORRECT - Verified working commands:
 supra move tool init --package-dir NAME --name NAME
 supra move tool compile --package-dir /supra/move_workspace/NAME
 supra move tool publish --package-dir /supra/move_workspace/NAME
@@ -889,13 +889,13 @@ supra move tool compile --package-dir /supra/move_workspace/my_project
 supra move account fund-with-faucet --rpc-url https://rpc-testnet.supra.com
 \`\`\`
 
-## 🚀 **Validated Deployment:**
+## **Validated Deployment:**
 \`\`\`bash
 # VERIFIED: Real deployment command
 supra move tool publish --package-dir /supra/move_workspace/my_project
 \`\`\`
 
-## 🔍 **Validated Function Calls:**
+## **Validated Function Calls:**
 \`\`\`bash
 # VERIFIED: View function call
 supra move tool view --function-id "0xYourAddress::your_module::function_name"
@@ -918,13 +918,13 @@ supra move automation register \\
 supra move automation cancel --task-index <TASK_INDEX>
 \`\`\`
 
-## 🛡️ **Validation Guarantees:**
+## **Validation Guarantees:**
 - ✅ All commands tested on Supra testnet
 - ✅ Parameter formats confirmed
 - ✅ Error messages documented
 - ✅ No fictional command flags
 
-**These commands are guaranteed to work! 🚀**
+**These commands are guaranteed to work!**
 `
       }]
     };
@@ -1075,19 +1075,19 @@ ${issues.length === 0 ? '✅ All interfaces and modules verified to exist!' : ''
     return {
       content: [{
         type: 'text',
-        text: `# 🛡️ **VALIDATED** Move Contract: ${finalModuleName}
+        text: `# **VALIDATED** Move Contract: ${finalModuleName}
 
 \`\`\`move
 ${finalCode}
 \`\`\`
 
-## ✅ **Validation Guarantees:**
+## **Validation Guarantees:**
 - Only uses verified Supra Framework modules
 - No non-existent interfaces or methods
 - Confirmed compilation compatibility
 - Production-ready patterns only
 
-**This Move code is guaranteed to compile! 🚀**
+**This Move code is guaranteed to compile!**
 `
       }]
     };
@@ -1142,13 +1142,13 @@ ${moveCode.content[0].text}
 
 ${sdkCode.content[0].text}
 
-## 🛡️ **Project Validation Summary:**
+## **Project Validation Summary:**
 - ✅ **Move Contract**: Only verified framework modules
 - ✅ **TypeScript SDK**: Only confirmed v4.3.1 interfaces  
 - ✅ **CLI Commands**: All tested and working
 - ✅ **Compilation**: Guaranteed to work
 
-**This entire project is validated and production-ready! 🚀**
+**This entire project is validated and production-ready!**
 `
       }]
     };
@@ -1252,18 +1252,13 @@ fi
 echo -e "${YELLOW}📄 Creating README...${NC}"
 cat > README.md << 'EOF'
 # Supra Code Generator MCP
-
 Lean MCP integration for generating Supra Move contracts and TypeScript SDK code.
 
 ## Features
-
 - **Move Contract Generation**: Production-ready contracts with security patterns
 - **TypeScript SDK Generation**: Complete client code with examples
-- **Supra Integration**: VRF, Automation, Oracles support
-- **NFT Marketplace Patterns**: Based on production-ready templates
 
 ## Usage in Claude
-
 Ask Claude to generate code:
 
 ```
@@ -1274,16 +1269,7 @@ Generate a Move contract for a DeFi lending protocol with VRF
 Create TypeScript SDK code for an NFT marketplace with payments
 ```
 
-## Available Features
-
-- `vrf` - Supra VRF integration
-- `automation` - Scheduled execution
-- `oracles` - Price feeds and data
-- `events` - On-chain event emission
-- `payments` - Token transfers
-
 ## Manual Setup
-
 If auto-config failed, add to Claude Desktop config:
 
 ```json
