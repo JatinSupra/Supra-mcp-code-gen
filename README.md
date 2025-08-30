@@ -50,17 +50,3 @@ You: "Create TypeScript SDK code for an NFT marketplace."
 ```
 
 > Restart Claude Desktop after configuration.
-
-## **Example Prompts**
-
-```
-"Build a prediction market for sports events with supra oracle price feeds"
-```
-
-```
-"Create a decentralized lending platform with collateral management"
-```
-
-```
-"Build a virtual real estate marketplace"
-```
